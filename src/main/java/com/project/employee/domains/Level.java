@@ -18,4 +18,49 @@ public class Level {
 
     @OneToMany(mappedBy = "level",fetch = FetchType.LAZY)
     private Set<Room> rooms = new HashSet<>();
+
+    
+
+    /**
+     * @return Long return the id
+     */
+    public Long getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    /**
+     * @return String return the level_name
+     */
+    public String getLevel_name() {
+        return level_name;
+    }
+
+    /**
+     * @param level_name the level_name to set
+     */
+    public void setLevel_name(String level_name) {
+        this.level_name = level_name;
+    }
+
+    /**
+     * @return Set<Room> return the rooms
+     */
+    public Set<Room> getRooms() {
+        return rooms;
+    }
+
+    /**
+     * @param rooms the rooms to set
+     */
+    public void setRooms(Set<Room> rooms) {
+        this.rooms = rooms;
+    }
+
 }
